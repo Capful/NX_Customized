@@ -96,23 +96,19 @@ SectionGroupEnd
 ; ------ SEC_B 加工模块 ------
 SectionGroup /e "加工模块"  SEC_B
 
-Section "编程模板" SEC_B1
-;  SectionIn 1 2
+Section "编程模板/后处理" SEC_B1
+  SectionIn RO
   SetOutPath "$INSTDIR\Template"
   File "Template\*.*"
   SetOutPath "$INSTDIR\Template\电极加工模板"
   File "Template\电极加工模板\*.*"
   SetOutPath "$INSTDIR\Template\默认加工模板"
   File "Template\默认加工模板\*.*"
+  SetOutPath "$INSTDIR\Postprocessor"
+  File "Postprocessor\*.*"
   Call NX10
   Call NX11
   Call NX12
-SectionEnd
-
-Section "机床后处理" SEC_B2
-;  SectionIn 1 2
-  SetOutPath "$INSTDIR\Postprocessor"
-  File "Postprocessor\*.*"
 SectionEnd
 SectionGroupEnd
 
