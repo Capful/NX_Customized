@@ -1,0 +1,13 @@
+NX 7.5.5.4
+Macro File: E:\22.macro
+Macro Version 7.50
+Macro List Language and Codeset: simpl_chinese 13
+Created by Administrator on Mon Jan 15 17:15:11 2018
+Part Name Display Style: $FILENAME
+Selection Parameters 1 2 0.248041 1
+Display Parameters 1.000000 17.875451 8.301728 -1.000000 -0.464421 1.000000 0.464421
+*****************
+RESET
+TBR COMBO UG_SEL_SCOPE_FILTER 4 -7 0
+TBR COMBO UG_SEL_SCOPE_FILTER 1 0 1
+  LINE  "Õû¸ö×°Åä"
