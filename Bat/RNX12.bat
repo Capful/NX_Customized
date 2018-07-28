@@ -14,6 +14,7 @@ echo ===============================================================
 echo.
 set "NX12meun=%NX12%\MACH\resource\template_set\"
 set "NX12post=%NX12%\MACH\resource\Postprocessor\"
+set "NX12moban=%NX12%\LOCALIZATION\prc\simpl_chinese\startup\"
 echo.
 echo 恢复NX 12模板菜单
 echo.
@@ -24,6 +25,15 @@ echo.
 echo 移除NX 12模板备份
 echo.
 if exist "%NX12meun%cam_general.opt" del /q "%backup%NX 12.0\cam_general.bak"
+echo 恢复NX 12系统模板菜单
+echo.
+if exist "%backup%NX 12.0\ugs_model_templates_simpl_chinese.bak" del /q "%NX12moban%ugs_model_templates_simpl_chinese.pax"
+copy /y "%backup%NX 12.0\ugs_model_templates_simpl_chinese.bak" "%NX12moban%"
+ren "%NX12moban%ugs_model_templates_simpl_chinese.bak" ugs_model_templates_simpl_chinese.pax
+echo.
+echo 移除NX 12系统模板备份
+echo.
+if exist "%NX12moban%ugs_model_templates_simpl_chinese.pax" del /q "%backup%NX 12.0\ugs_model_templates_simpl_chinese.bak"
 echo.
 echo 恢复NX 12后处理菜单
 echo.

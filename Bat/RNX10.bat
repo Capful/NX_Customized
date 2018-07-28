@@ -14,6 +14,7 @@ echo ===============================================================
 echo.
 set "NX10meun=%NX10%\MACH\resource\template_set\"
 set "NX10post=%NX10%\MACH\resource\Postprocessor\"
+set "NX10moban=%NX10%\LOCALIZATION\prc\simpl_chinese\startup\"
 echo.
 echo 恢复NX 10模板菜单
 echo.
@@ -24,6 +25,15 @@ echo.
 echo 移除NX 10模板备份
 echo.
 if exist "%NX10meun%cam_general.opt" del /q "%backup%NX 10.0\cam_general.bak"
+echo 恢复NX 10系统模板菜单
+echo.
+if exist "%backup%NX 10.0\ugs_model_templates_simpl_chinese.bak" del /q "%NX10moban%ugs_model_templates_simpl_chinese.pax"
+copy /y "%backup%NX 10.0\ugs_model_templates_simpl_chinese.bak" "%NX10moban%"
+ren "%NX10moban%ugs_model_templates_simpl_chinese.bak" ugs_model_templates_simpl_chinese.pax
+echo.
+echo 移除NX 10系统模板备份
+echo.
+if exist "%NX10moban%ugs_model_templates_simpl_chinese.pax" del /q "%backup%NX 10.0\ugs_model_templates_simpl_chinese.bak"
 echo.
 echo 恢复NX 10后处理菜单
 echo.

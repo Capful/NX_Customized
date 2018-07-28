@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Palette xmlns="http://www.ugsolutions.com/Schemas/2001/UGPalettes" schemaVersion="1.0">
+
+  <Presentation name="主模型模板（公制）" bitmap="sheet_and_block.bmp" FileNewTab="模型" application="All" UsesMasterModel="No"/>
+
+<PaletteEntry id="d1">
+    <References/>
+    <Presentation name="模型" description="带基准 CSYS 的 NX 示例">
+        <PreviewImage type="UGPart" location="model_template.jpg"/>
+    </Presentation>
+    <ObjectData class="ModelTemplate">
+        <Filename>model-plain-1-inch-template.prt</Filename>
+	<Units>English</Units>
+    </ObjectData>
+  </PaletteEntry>
+
+  <PaletteEntry id="d2">
+    <References/>
+    <Presentation name="模型" description="带基准 CSYS 的 NX 示例">
+        <PreviewImage type="UGPart" location="model_template.jpg"/>
+    </Presentation>
+    <ObjectData class="ModelTemplate">
+        <Filename>model-plain-1-mm-template.prt</Filename>
+	<Units>Metric</Units>
+    </ObjectData>
+  </PaletteEntry>
+  
+  <PaletteEntry id="d24">
+    <References/>
+    <Presentation name="加工" description="Capful定制的加工模板">
+        <PreviewImage type="UGPart" location="${UGII_CAM_TEMPLATE_PART_ENGLISH_DIR}diemold_express.jpg"/>
+    </Presentation>
+    <ObjectData class="ModelTemplate">
+        <Filename>D:\NX Customized\Template\Capful-Template.prt</Filename>
+	<Units>English</Units>
+    </ObjectData>
+  </PaletteEntry>
+
+  <PaletteEntry id="d25">
+    <References/>
+    <Presentation name="加工" description="Capful定制的加工模板">
+        <PreviewImage type="UGPart" location="${UGII_CAM_TEMPLATE_PART_ENGLISH_DIR}diemold_express.jpg"/>
+    </Presentation>
+    <ObjectData class="ModelTemplate">
+        <Filename>D:\NX Customized\Template\Capful-Template.prt</Filename>
+	<Units>Metric</Units>
+    </ObjectData>
+  </PaletteEntry>
+
+  <PaletteEntry id="d7">
+    <References/>
+    <Presentation name="装配" description="NX 示例，开始添加组件">
+        <PreviewImage type="UGPart" location="assembly_template.jpg"/>
+    </Presentation>
+    <ObjectData class="AssemblyTemplate">
+        <Filename>assembly-inch-template.prt</Filename>
+	<Units>English</Units>
+    </ObjectData>
+  </PaletteEntry>
+
+  <PaletteEntry id="d8">
+    <References/>
+    <Presentation name="装配" description="NX 示例，开始添加组件">
+        <PreviewImage type="UGPart" location="assembly_template.jpg"/>
+    </Presentation>
+    <ObjectData class="AssemblyTemplate">
+        <Filename>assembly-mm-template.prt</Filename>
+	<Units>Metric</Units>
+    </ObjectData>
+  </PaletteEntry>
+
+
+  <PaletteEntry id="d9">
+    <References/>
+    <Presentation name="外观造型设计" description="NX 示例，透视和栅格">
+        <PreviewImage type="UGPart" location="studio_template.jpg"/>
+    </Presentation>
+    <ObjectData class="StudioTemplate">
+        <Filename>shape-studio-inch-template.prt</Filename>
+	<Units>English</Units>
+    </ObjectData>
+  </PaletteEntry>
+  
+  <PaletteEntry id="d10">
+    <References/>
+    <Presentation name="外观造型设计" description="NX 示例，透视和栅格">
+        <PreviewImage type="UGPart" location="studio_template.jpg"/>
+    </Presentation>
+    <ObjectData class="StudioTemplate">
+        <Filename>shape-studio-mm-template.prt</Filename>
+	<Units>Metric</Units>
+    </ObjectData>
+  </PaletteEntry> 
+
+    <PaletteEntry id="d11">
+    <References/>
+    <Presentation name="NX 钣金" description="带基准 CSYS 的 NX 示例">
+        <PreviewImage type="UGPart" location="sheet_metal_template.jpg"/>
+    </Presentation>
+    <ObjectData class="NXSheetMetalTemplate">
+        <Filename>sheet-metal-inch-template.prt</Filename>
+	<Units>English</Units>
+    </ObjectData>
+  </PaletteEntry>
+
+  <PaletteEntry id="d12">
+    <References/>
+    <Presentation name="NX 钣金" description="带基准 CSYS 的 NX 示例">
+        <PreviewImage type="UGPart" location="sheet_metal_template.jpg"/>
+    </Presentation>
+    <ObjectData class="NXSheetMetalTemplate">
+        <Filename>sheet-metal-mm-template.prt</Filename>
+	<Units>Metric</Units>
+    </ObjectData>
+  </PaletteEntry>
+
+     <PaletteEntry id="d13">
+    <References/>
+    <Presentation name="航空钣金" description="带基准 CSYS 的 NX 示例">
+        <PreviewImage type="UGPart" location="aero_metal_template.jpg"/>
+    </Presentation>
+    <ObjectData class="AeroSheetMetalTemplate">
+        <Filename>aero-sheet-metal-inch-template.prt</Filename>
+	<Units>English</Units>
+    </ObjectData>
+  </PaletteEntry>
+
+  <PaletteEntry id="d14">
+    <References/>
+    <Presentation name="航空钣金" description="带基准 CSYS 的 NX 示例">
+        <PreviewImage type="UGPart" location="aero_metal_template.jpg"/>
+    </Presentation>
+    <ObjectData class="AeroSheetMetalTemplate">
+        <Filename>aero-sheet-metal-mm-template.prt</Filename>
+	<Units>Metric</Units>
+    </ObjectData>
+  </PaletteEntry>
+
+  <PaletteEntry id="d15">
+    <References/>
+    <Presentation name="逻辑布线" description="带基准 CSYS 的 NX 示例">
+        <PreviewImage type="UGPart" location="routing_logical_template.jpg"/>
+    </Presentation>
+    <ObjectData class="RoutingLogicalTemplate">
+        <Filename>routing-logical-inch-template.prt</Filename>
+	<Units>English</Units>
+    </ObjectData>
+  </PaletteEntry>
+
+  <PaletteEntry id="d16">
+    <References/>
+    <Presentation name="逻辑布线" description="带基准 CSYS 的 NX 示例">
+        <PreviewImage type="UGPart" location="routing_logical_template.jpg"/>
+    </Presentation>
+    <ObjectData class="RoutingLogicalTemplate">
+        <Filename>routing-logical-mm-template.prt</Filename>
+	<Units>Metric</Units>
+    </ObjectData>
+  </PaletteEntry>
+
+  <PaletteEntry id="d17">
+    <References/>
+    <Presentation name="机械布管" description="带基准 CSYS 的 NX 示例">
+        <PreviewImage type="UGPart" location="routing_mech_template.jpg"/>
+    </Presentation>
+    <ObjectData class="RoutingMechanicalTemplate">
+        <Filename>routing-mech-inch-template.prt</Filename>
+	<Units>English</Units>
+    </ObjectData>
+  </PaletteEntry>
+
+  <PaletteEntry id="d18">
+    <References/>
+    <Presentation name="机械布管" description="带基准 CSYS 的 NX 示例">
+        <PreviewImage type="UGPart" location="routing_mech_template.jpg"/>
+    </Presentation>
+    <ObjectData class="RoutingMechanicalTemplate">
+        <Filename>routing-mech-mm-template.prt</Filename>
+	<Units>Metric</Units>
+    </ObjectData>
+  </PaletteEntry>
+  
+  <PaletteEntry id="d19">
+    <References/>
+    <Presentation name="电气布线" description="带基准 CSYS 的 NX 示例">
+         <PreviewImage type="UGPart" location="routing_elec_template.jpg"/>
+    </Presentation>
+    <ObjectData class="RoutingElectricalTemplate">
+        <Filename>routing-elec-inch-template.prt</Filename>
+	<Units>English</Units>
+    </ObjectData>
+  </PaletteEntry>
+
+  <PaletteEntry id="d20">
+    <References/>
+    <Presentation name="电气布线" description="带基准 CSYS 的 NX 示例">
+        <PreviewImage type="UGPart" location="routing_elec_template.jpg"/>
+    </Presentation>
+    <ObjectData class="RoutingElectricalTemplate">
+        <Filename>routing-elec-mm-template.prt</Filename>
+	<Units>Metric</Units>
+    </ObjectData>
+  </PaletteEntry>
+
+</Palette>
