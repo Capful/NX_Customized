@@ -309,7 +309,7 @@ Function .onInit
   ProcessWork::existsprocess
   Pop $R0
   IntCmp $R0 0 Done
-  MessageBox MB_OKCANCEL|MB_ICONSTOP "安装程序检测到 UG 正在运行。$\r$\n$\r$\n点击 “确定” 强制关闭UG，确认保存UG文档。$\r$\n点击 “取消” 退出安装程序。" IDCANCEL Exit
+  MessageBox MB_OKCANCEL|MB_ICONSTOP "安装程序检测到 UG 正在运行。$\r$\n$\r$\n点击 “确定” 强制关闭UG，请确认保存UG文档。$\r$\n点击 “取消” 退出安装程序。" IDCANCEL Exit
   Push "ugraf.exe"
   Processwork::KillProcess
   Sleep 1000
@@ -327,7 +327,6 @@ FunctionEnd
 
 Section Uninstall
   Delete "$INSTDIR\*.*"
-
   RMDir /r "$INSTDIR"
 ; 删除环境变量
   DeleteRegValue HKLM "SYSTEM\CurrentControlSet\Control\Session Manager\Environment" "UGII_USER_DIR"
@@ -338,20 +337,27 @@ SectionEnd
 #-- 根据 NSIS 脚本编辑规则，所有 Function 区段必须放置在 Section 区段之后编写，以避免安装程序出现未可预知的问题。--#
 
 Function un.onInit
-  MessageBox MB_ICONQUESTION|MB_YESNO|MB_DEFBUTTON2 "您确实要完全移除 $(^Name) ，及其所有的组件？" IDYES +2
-  Abort
-  ;检测程序是否运行
-  FindProcDLL::FindProc "ugraf.exe"
+  ;关闭进程
+  Push $R0
+  CheckProc:
+  Push "ugraf.exe"
+  ProcessWork::existsprocess
   Pop $R0
-  IntCmp $R0 1 0 no_run
-  MessageBox MB_ICONSTOP "卸载程序检测到 UG 正在运行，请确认保存UG文档之后再关闭UG，继续卸载！"
-  Quit
-  no_run:
+  IntCmp $R0 0 Done
+  MessageBox MB_OKCANCEL|MB_ICONSTOP "卸载程序检测到 UG 正在运行。$\r$\n$\r$\n点击 “确定” 强制关闭UG，请确认保存UG文档。$\r$\n点击 “取消” 退出卸载程序。" IDCANCEL Exit
+  Push "ugraf.exe"
+  Processwork::KillProcess
+  Sleep 1000
+  Goto CheckProc
+  Exit:
+  Abort
+  Done:
   MessageBox MB_ICONQUESTION|MB_YESNO|MB_DEFBUTTON2 "您确实要完全移除 $(^Name) ，及其所有的组件？" IDYES +2
   Abort
   Call un.NX10
   Call un.NX11
   Call un.NX12
+  Pop $R0
 FunctionEnd
 
 Function un.NX10
