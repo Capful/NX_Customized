@@ -262,20 +262,15 @@ BITMAP  utd_Runner.bmp
 TYPE    MENU_BUTTON
 ACTION  XC_RUNNER
 
-NAME    牛角
-BITMAP  utd_Oxhorn.bmp
-TYPE    MENU_BUTTON
-ACTION  XC_OXHORN_WATER
-
 NAME    潜入水
 BITMAP  utd_GroundWater.bmp
 TYPE    MENU_BUTTON
 ACTION  XC_GROUND_WATER
 
-NAME    香蕉型胶口
-BITMAP  utd_BananaWater.bmp
+NAME    牛角
+BITMAP  utd_Oxhorn.bmp
 TYPE    MENU_BUTTON
-ACTION  XC_BANANA_WATER
+ACTION  XC_OXHORN_WATER
 
 NAME    水口勾针
 BITMAP  utd_RunnerLockPin.bmp
