@@ -3,15 +3,6 @@ VERSION 2
 
 OPTION DISMISS ON
 
-!========介绍工具命令部份======================!
-
-ICONS
-COLUMNS 1
-
-NAME    欢迎使用全3D设计软件
-BITMAP  XcUtd.bmp
-TYPE    MENU_BUTTON
-ACTION  XC_COMPONY_DESIGN
 
 !===========模架命令部份========================!
 
@@ -267,7 +258,7 @@ BITMAP  utd_GroundWater.bmp
 TYPE    MENU_BUTTON
 ACTION  XC_GROUND_WATER
 
-NAME    牛角
+NAME    牛角浇口
 BITMAP  utd_Oxhorn.bmp
 TYPE    MENU_BUTTON
 ACTION  XC_OXHORN_WATER
@@ -425,7 +416,7 @@ BITMAP  utd_SleefEjPin.bmp
 TYPE    MENU_BUTTON
 ACTION  XC_SLEEF_EJECTOR_PIN
 
-NAME    顶针修剪
+NAME    顶针长度修剪
 BITMAP  utd_EjectorTrim.bmp
 TYPE    MENU_BUTTON
 ACTION  XC_EJECTOR_TRIM
@@ -449,6 +440,11 @@ NAME    顶针统计
 BITMAP  utd_EjGather.bmp
 TYPE    MENU_BUTTON
 ACTION  XC_EJECTOR_GATHER
+
+NAME    镶针统计
+BITMAP  utd_IPGather.bmp
+TYPE    MENU_BUTTON
+ACTION  XC_INSERT_PIN_GATHER
 
 NAME    螺丝统计
 BITMAP  utd_ScrewGather.bmp
@@ -592,6 +588,11 @@ BITMAP  utd_CornerAvoid.bmp
 TYPE    MENU_BUTTON
 ACTION  XC_CORNER_AVOID
 
+NAME    顶块基准
+BITMAP  utd_BlockDatum.bmp
+TYPE    MENU_BUTTON
+ACTION  XC_BLOCK_DATUMN
+
 NAME    自动倒角
 BITMAP  utd_AutoChamfer.bmp
 TYPE    MENU_BUTTON
@@ -679,7 +680,7 @@ BITMAP  utd_MoldDraw.bmp
 TYPE    MENU_BUTTON
 ACTION  XC_MOULD_DRAW
 
-NAME    缩放图纸
+NAME    缩放图框(视图不变)
 BITMAP  utd_TransDraw.bmp
 TYPE    MENU_BUTTON
 ACTION  XC_TRANS_DRAW
@@ -724,10 +725,16 @@ BITMAP  utd_WireHoleBom.bmp
 TYPE    MENU_BUTTON
 ACTION  XC_WIRING_HOLE_BOM
 
-NAME    拆分表格
+NAME    拆分电子表格
 BITMAP  utd_SplitTabnot.bmp
 TYPE    MENU_BUTTON
 ACTION  XC_SPLIT_TABNOT
+
+NAME    缩放电子表格
+BITMAP  utd_ScaleTabnot.bmp
+TYPE    MENU_BUTTON
+ACTION  XC_SCALE_TABNOT
+
 
 NAME    标注原点
 BITMAP  utd_Ordinate.bmp
@@ -738,6 +745,11 @@ NAME    自动标注
 BITMAP  utd_AutoDim.bmp
 TYPE    MENU_BUTTON
 ACTION  XC_AUTO_DIM
+
+NAME    角度标注
+BITMAP  utd_AngulaDim.bmp
+TYPE    MENU_BUTTON
+ACTION  XC_ANGULAR_DIM
 
 NAME    同形状尺寸数量
 BITMAP  utd_SameDimNum.bmp
