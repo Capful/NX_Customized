@@ -66,7 +66,7 @@ MENU XC_MOULD_DESIGN
   LABEL   帮助注册(&H)
  SEPARATOR
   BUTTON   XC_COMPONY_DESIGN
-LABEL   正版X2.8.0817
+LABEL   正版X2.8.0830
   BITMAP   XcAbout.bmp
   ACTIONS  XC_ABOUT
 END_OF_MENU
@@ -115,7 +115,7 @@ END_OF_MENU
   LABEL   帮助注册(&H)
  SEPARATOR
   BUTTON  XC_COMPONY_CAM
-LABEL   正版X2.8.0817
+LABEL   正版X2.8.0830
   BITMAP  XcAbout.bmp
   ACTIONS XC_ABOUT
   END_OF_MENU
@@ -746,6 +746,10 @@ LABEL   正版X2.8.0817
   LABEL    智能排气槽(&M)
   BITMAP   MoldGas.bmp
   ACTIONS  XC_NXOPEN
+  BUTTON   XC_MOLD_GAS_MANUAL
+  LABEL    模仁排气槽(&M)
+  BITMAP   MoldGas.bmp
+  ACTIONS  XC_ABOUT
   BUTTON   XC_INSERT_GAS
   LABEL    镶件排气槽(&I)
   BITMAP   InsertGas.bmp
@@ -786,12 +790,12 @@ END_OF_MENU
   BUTTON   XC_EXPORT_ELEC
   LABEL    批量导出电极
   MESSAGE  批量导出电极,在导出前可自动放正电极。支持导出prt,x_t,igs,stp四种类型文件。
-  BITMAP   AutoExport.bmp
+  BITMAP   ElecExport.bmp
   ACTIONS  XC_ABOUT
   BUTTON   XC_EXPORT_SOLID
   LABEL    批量导出实体
   MESSAGE  批量导出模型实体, 支持导出prt,x_t,igs,stp四种类型文件。
-  BITMAP   AutoExport.bmp
+  BITMAP   ElecExport.bmp
   ACTIONS  XC_ABOUT
   BUTTON   XC_BATCH_IMPORT
   LABEL    批量导入(I)
