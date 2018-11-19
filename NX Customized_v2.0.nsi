@@ -2,7 +2,7 @@
 
 ; 安装程序初始定义常量
 !define PRODUCT_NAME "NX Customized"
-!define PRODUCT_VERSION "2.0.0"
+!define PRODUCT_VERSION "2.1.0"
 !define PRODUCT_PUBLISHER "Capful"
 !define PRODUCT_UNINST_KEY "Software\Microsoft\Windows\CurrentVersion\Uninstall\${PRODUCT_NAME}"
 !define PRODUCT_UNINST_ROOT_KEY "HKLM"
