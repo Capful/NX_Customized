@@ -70,6 +70,8 @@ SectionGroup /e "基本定制"  SEC_A
 
 Section "基础文件" SEC_A1
   SectionIn RO
+  SetOutPath "$INSTDIR"
+  File "changelog.txt"
   SetOutPath "$INSTDIR\Bat"
   SetOverwrite ifnewer
   File "Bat\*.*"
